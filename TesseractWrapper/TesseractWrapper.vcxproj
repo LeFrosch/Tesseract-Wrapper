@@ -92,6 +92,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalUsingDirectories>$(SolutionDir)bin;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -104,6 +105,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalUsingDirectories>$(SolutionDir)bin;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -136,8 +138,8 @@
   <ItemGroup>
     <ClInclude Include="Conversion.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Resource.h" />
     <ClInclude Include="TesseractException.h" />
+    <ClInclude Include="TesseractSettings.h" />
     <ClInclude Include="TesseractWrapper.h" />
   </ItemGroup>
   <ItemGroup>

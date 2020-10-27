@@ -12,7 +12,7 @@ namespace Test
         [TestMethod]
         public void ReadingTest()
         {
-            using var reader = new ImageReader(@"..\bin", "eng");
+            using var reader = new ImageReader(@"..\bin", "eng", OCREngineMode.);
 
             Console.WriteLine(reader.Reade(new Bitmap(@"..\bin\testImage.jpg")));
         }

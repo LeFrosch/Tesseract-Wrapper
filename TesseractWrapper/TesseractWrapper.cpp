@@ -4,14 +4,18 @@
 #include "TesseractException.h"
 #include "Conversion.h"
 
-TesseractWrapper::ImageReader::ImageReader(String^ dataPath, String^ language)
+TesseractWrapper::ImageReader::ImageReader(String^ dataPath, String^ language) 
+    : ImageReader(dataPath, language, OCREngineMode::OEM_LSTM_ONLY)
+{ }
+
+TesseractWrapper::ImageReader::ImageReader(String^ dataPath, String^ language, OCREngineMode mode)
 {
     auto ptrDataPath = StringToChar(dataPath);
     auto ptrLanguage = StringToChar(language);
 
     api = new tesseract::TessBaseAPI();
 
-    int ret = api->Init(ptrDataPath.get(), ptrLanguage.get(), tesseract::OEM_LSTM_ONLY);
+    int ret = api->Init(ptrDataPath.get(), ptrLanguage.get(), (tesseract::OcrEngineMode) mode);
     if (ret)
         throw gcnew TesseractException("Failed to initialize tesseract.", ret);
 }
