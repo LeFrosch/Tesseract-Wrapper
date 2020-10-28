@@ -1,6 +1,6 @@
 #include "pch.h"
 
-#include "TesseractWrapper.h"
+#include "ImageReader.h"
 #include "TesseractException.h"
 #include "Conversion.h"
 
@@ -26,14 +26,27 @@ TesseractWrapper::ImageReader::~ImageReader()
     delete api;
 }
 
-String^ TesseractWrapper::ImageReader::Reade(Bitmap^ image)
+void TesseractWrapper::ImageReader::SetPageSegMode(PageSegMode mode)
+{
+    api->SetPageSegMode((tesseract::PageSegMode) mode);
+}
+
+TesseractWrapper::PageSegMode TesseractWrapper::ImageReader::GetPageSegMode()
+{
+    return (PageSegMode) api->GetPageSegMode();
+}
+
+void TesseractWrapper::ImageReader::SetImage(Bitmap^ image)
 {
     auto pix = BitmapToPix(image);
     if (!pix.get())
         throw gcnew TesseractException("Failed to read bit map.", -1);
 
     api->SetImage(pix.get());
+}
 
+String^ TesseractWrapper::ImageReader::GetText()
+{
     auto ptrOutText = api->GetUTF8Text();
     auto gcOutText = gcnew String(ptrOutText);
 

@@ -12,9 +12,14 @@ namespace Test
         [TestMethod]
         public void ReadingTest()
         {
-            using var reader = new ImageReader(@"..\bin", "eng", OCREngineMode.);
+            using var reader = new ImageReader(@"..\bin", "eng");
 
-            Console.WriteLine(reader.Reade(new Bitmap(@"..\bin\testImage.jpg")));
+            reader.SetPageSegMode(PageSegMode.PSM_SPARSE_TEXT);
+
+            using (var image = new Bitmap(@"..\bin\testImage0.jpg"))
+                reader.SetImage(image);
+
+            Assert.IsTrue(reader.GetText().Contains("Countries Arranged by Geographical Location"));
         }
     }
 }
