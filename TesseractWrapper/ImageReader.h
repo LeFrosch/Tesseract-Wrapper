@@ -56,6 +56,12 @@ namespace TesseractWrapper
 		/// Tesseract.
 		/// </summary>
 		void SetImage(Bitmap^ image);
+		
+		/// <summary>
+		/// Restrict recognition to a sub-rectangle of the image. Call after SetImage. Each SetRectangle
+		/// clears the recogntion results so multiple rectangles can be recognized with the same image.
+		/// </summary>
+		void SetRectangle(int left, int top, int width, int height);
 
 		/// <summary>
 		/// The recognized text is returned. Call SetImage before calling this method. 

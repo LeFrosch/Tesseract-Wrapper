@@ -36,6 +36,11 @@ TesseractWrapper::PageSegMode TesseractWrapper::ImageReader::GetPageSegMode()
     return (PageSegMode) api->GetPageSegMode();
 }
 
+void TesseractWrapper::ImageReader::SetRectangle(int left, int top, int width, int height)
+{
+    api->SetRectangle(left, top, width, height);
+}
+
 void TesseractWrapper::ImageReader::SetImage(Bitmap^ image)
 {
     auto pix = BitmapToPix(image);
