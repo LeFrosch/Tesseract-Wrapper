@@ -5,13 +5,16 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TesseractWrapper", "TesseractWrapper\TesseractWrapper.vcxproj", "{F315FB03-78FA-4C91-A3F6-D62F17A75A20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Nuget|Any CPU = Nuget|Any CPU
+		Nuget|x64 = Nuget|x64
+		Nuget|x86 = Nuget|x86
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
@@ -22,6 +25,11 @@ Global
 		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Debug|x64.Build.0 = Debug|x64
 		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Debug|x86.ActiveCfg = Debug|Win32
 		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Debug|x86.Build.0 = Debug|Win32
+		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Nuget|Any CPU.ActiveCfg = Release|Win32
+		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Nuget|x64.ActiveCfg = Nuget|x64
+		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Nuget|x64.Build.0 = Nuget|x64
+		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Nuget|x86.ActiveCfg = Nuget|Win32
+		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Nuget|x86.Build.0 = Nuget|Win32
 		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Release|Any CPU.ActiveCfg = Release|Win32
 		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Release|x64.ActiveCfg = Release|x64
 		{F315FB03-78FA-4C91-A3F6-D62F17A75A20}.Release|x64.Build.0 = Release|x64
@@ -33,10 +41,14 @@ Global
 		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Debug|x64.Build.0 = Debug|x64
 		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Debug|x86.Build.0 = Debug|Any CPU
+		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Nuget|Any CPU.ActiveCfg = Release|Any CPU
+		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Nuget|Any CPU.Build.0 = Release|Any CPU
+		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Nuget|x64.ActiveCfg = Release|Any CPU
+		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Nuget|x86.ActiveCfg = Release|Any CPU
 		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|x64.ActiveCfg = Release|Any CPU
-		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|x64.Build.0 = Release|Any CPU
+		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|x64.ActiveCfg = Release|x64
+		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|x64.Build.0 = Release|x64
 		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|x86.ActiveCfg = Release|Any CPU
 		{79E4BA7F-0588-41FB-A62E-2F0FCA80A452}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection

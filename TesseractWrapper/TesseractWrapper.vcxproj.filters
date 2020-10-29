@@ -9,6 +9,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5a02c373-c559-46a4-a71f-f01b866fa821}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -43,5 +46,16 @@
     <ClCompile Include="ImageReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="TesseractWrapper86.nuspec">
+      <Filter>Resources</Filter>
+    </Xml>
+    <Xml Include="TesseractWrapper64.nuspec">
+      <Filter>Resources</Filter>
+    </Xml>
+    <Xml Include="TesseractWrapper64.targets">
+      <Filter>Resources</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

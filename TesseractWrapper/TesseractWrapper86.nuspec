@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+	<metadata>
+		<id>TesseractWrapper86</id>
+		<version>1.0.2</version>
+		<title>Tesseract Wrapper (x86)</title>
+		<authors>Daniel Brauner</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">Apache-2.0</license>
+		<projectUrl>https://github.com/LeFrosch/Tesseract-Wrapper</projectUrl>
+		<description>A very simple and lightweight wrapper for the Tesseract c++ library.</description>
+		<releaseNotes>Initial release.</releaseNotes>
+		<copyright>Daniel Brauner</copyright>
+		<tags>C# Tesseract</tags>
+
+		<dependencies>
+			<group targetFramework=".NETCoreApp3.1" />
+		</dependencies>
+		<references>
+			<group targetFramework="netcoreapp3.1">
+				<reference file="TesseractWrapper.dll" />
+				<reference file="TesseractWrapper.pdb" />
+			</group>
+		</references>
+	</metadata>
+	<files>
+		<file src="..\Nuget\x86\TesseractWrapper.dll" target="ref\netcoreapp3.1\TesseractWrapper.dll" />
+		<file src="..\Nuget\x86\TesseractWrapper.pdb" target="ref\netcoreapp3.1\TesseractWrapper.pdb" />
+
+		<file src="..\Nuget\x86\**" target="lib\netcoreapp3.1" />
+	</files>
+</package>

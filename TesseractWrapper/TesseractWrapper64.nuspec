@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+	<metadata>
+		<id>TesseractWrapper64</id>
+		<version>1.0.13</version>
+		<title>Tesseract Wrapper (x64)</title>
+		<authors>Daniel Brauner</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">Apache-2.0</license>
+		<projectUrl>https://github.com/LeFrosch/Tesseract-Wrapper</projectUrl>
+		<description>A very simple and lightweight wrapper for the Tesseract c++ library.</description>
+		<releaseNotes>Initial release.</releaseNotes>
+		<copyright>Daniel Brauner</copyright>
+		<tags>C# Tesseract</tags>
+
+		<dependencies>
+			<group targetFramework=".NETCoreApp3.1" >
+				<dependency  id="System.Drawing.Common" version="4.7.0" />
+			</group>
+		</dependencies>
+		
+		<references>
+			<group targetFramework="netcoreapp3.1">
+				<reference file="TesseractWrapper.dll" />
+				<reference file="TesseractWrapper.pdb" />
+			</group>
+		</references>
+	</metadata>
+	<files>
+		<file src="..\Nuget\x64\TesseractWrapper.dll" target="ref\netcoreapp3.1\TesseractWrapper.dll" />
+		<file src="..\Nuget\x64\TesseractWrapper.pdb" target="ref\netcoreapp3.1\TesseractWrapper.pdb" />
+
+		<file src="..\Nuget\x64\TesseractWrapper.dll" target="lib\netcoreapp3.1\TesseractWrapper.dll" />
+		<file src="..\Nuget\x64\TesseractWrapper.pdb" target="lib\netcoreapp3.1\TesseractWrapper.pdb" />
+
+		<file src="..\Nuget\x64\TesseractWrapper.xml" target="build\TesseractWrapper.xml" />
+
+		<file src="..\Nuget\x64\Ijwhost.dll" target="build\Ijwhost.dll" />
+		<file src="..\Nuget\x64\jpeg62.dll" target="build\jpeg62.dll" />
+		<file src="..\Nuget\x64\leptonica-1.78.0.dll" target="build\leptonica-1.78.0.dll" />
+		<file src="..\Nuget\x64\libpng16.dll" target="build\libpng16.dll" />
+		<file src="..\Nuget\x64\lzma.dll" target="build\lzma.dll" />
+		<file src="..\Nuget\x64\tiff.dll" target="build\tiff.dll" />
+		<file src="..\Nuget\x64\webp.dll" target="build\webp.dll" />
+		<file src="..\Nuget\x64\zlib1.dll" target="build\zlib1.dll" />
+		<file src="..\Nuget\x64\brotlicommon.dll" target="build\brotlicommon.dll" />
+		<file src="..\Nuget\x64\brotlidec.dll" target="build\brotlidec.dll" />
+		<file src="..\Nuget\x64\bz2.dll" target="build\bz2.dll" />
+		<file src="..\Nuget\x64\freetype.dll" target="build\freetype.dll" />
+
+		<file src="TesseractWrapper64.targets" target="build\" />
+	</files>
+</package>

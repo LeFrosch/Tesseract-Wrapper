@@ -1,0 +1,69 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="$(MSBuildThisFileDirectory)Ijwhost.dll">
+			<Visible>false</Visible>
+			<Link>Ijwhost.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)jpeg62.dll">
+			<Visible>false</Visible>
+			<Link>jpeg62.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)leptonica-1.78.0.dll">
+			<Visible>false</Visible>
+			<Link>leptonica-1.78.0.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)libpng16.dll">
+			<Visible>false</Visible>
+			<Link>libpng16.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)lzma.dll">
+			<Visible>false</Visible>
+			<Link>lzma.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)tiff.dll">
+			<Visible>false</Visible>
+			<Link>tiff.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)webp.dll">
+			<Visible>false</Visible>
+			<Link>webp.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)zlib1.dll">
+			<Visible>false</Visible>
+			<Link>zlib1.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)brotlicommon.dll">
+			<Visible>false</Visible>
+			<Link>brotlicommon.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)brotlidec.dll">
+			<Visible>false</Visible>
+			<Link>brotlidec.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)bz2.dll">
+			<Visible>false</Visible>
+			<Link>bz2.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)freetype.dll">
+			<Visible>false</Visible>
+			<Link>freetype.dll</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="$(MSBuildThisFileDirectory)TesseractWrapper.xml">
+			<Visible>false</Visible>
+			<Link>TesseractWrapper.xml</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+</Project>
