@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>TesseractWrapper86</id>
-		<version>1.0.2</version>
+		<version>1.0.0</version>
 		<title>Tesseract Wrapper (x86)</title>
 		<authors>Daniel Brauner</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,8 +14,11 @@
 		<tags>C# Tesseract</tags>
 
 		<dependencies>
-			<group targetFramework=".NETCoreApp3.1" />
+			<group targetFramework=".NETCoreApp3.1" >
+				<dependency  id="System.Drawing.Common" version="4.7.0" />
+			</group>
 		</dependencies>
+
 		<references>
 			<group targetFramework="netcoreapp3.1">
 				<reference file="TesseractWrapper.dll" />
@@ -27,6 +30,18 @@
 		<file src="..\Nuget\x86\TesseractWrapper.dll" target="ref\netcoreapp3.1\TesseractWrapper.dll" />
 		<file src="..\Nuget\x86\TesseractWrapper.pdb" target="ref\netcoreapp3.1\TesseractWrapper.pdb" />
 
-		<file src="..\Nuget\x86\**" target="lib\netcoreapp3.1" />
+		<file src="..\Nuget\x86\TesseractWrapper.dll" target="lib\netcoreapp3.1\TesseractWrapper.dll" />
+		<file src="..\Nuget\x86\TesseractWrapper.pdb" target="lib\netcoreapp3.1\TesseractWrapper.pdb" />
+
+		<file src="..\Nuget\x86\Ijwhost.dll" target="build\Ijwhost.dll" />
+		<file src="..\Nuget\x86\jpeg62.dll" target="build\jpeg62.dll" />
+		<file src="..\Nuget\x86\leptonica-1.78.0.dll" target="build\leptonica-1.78.0.dll" />
+		<file src="..\Nuget\x86\libpng16.dll" target="build\libpng16.dll" />
+		<file src="..\Nuget\x86\lzma.dll" target="build\lzma.dll" />
+		<file src="..\Nuget\x86\tiff.dll" target="build\tiff.dll" />
+		<file src="..\Nuget\x86\webp.dll" target="build\webp.dll" />
+		<file src="..\Nuget\x86\zlib1.dll" target="build\zlib1.dll" />
+
+		<file src="TesseractWrapper86.targets" target="build\" />
 	</files>
 </package>

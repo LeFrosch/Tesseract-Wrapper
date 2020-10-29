@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>TesseractWrapper64</id>
-		<version>1.0.13</version>
+		<version>1.0.0</version>
 		<title>Tesseract Wrapper (x64)</title>
 		<authors>Daniel Brauner</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -32,8 +32,6 @@
 
 		<file src="..\Nuget\x64\TesseractWrapper.dll" target="lib\netcoreapp3.1\TesseractWrapper.dll" />
 		<file src="..\Nuget\x64\TesseractWrapper.pdb" target="lib\netcoreapp3.1\TesseractWrapper.pdb" />
-
-		<file src="..\Nuget\x64\TesseractWrapper.xml" target="build\TesseractWrapper.xml" />
 
 		<file src="..\Nuget\x64\Ijwhost.dll" target="build\Ijwhost.dll" />
 		<file src="..\Nuget\x64\jpeg62.dll" target="build\jpeg62.dll" />

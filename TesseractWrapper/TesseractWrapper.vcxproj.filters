@@ -57,5 +57,8 @@
     <Xml Include="TesseractWrapper64.targets">
       <Filter>Resources</Filter>
     </Xml>
+    <Xml Include="TesseractWrapper86.targets">
+      <Filter>Resources</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

@@ -41,25 +41,6 @@
 			<Link>zlib1.dll</Link>
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
-		<None Include="$(MSBuildThisFileDirectory)brotlicommon.dll">
-			<Visible>false</Visible>
-			<Link>brotlicommon.dll</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
-		<None Include="$(MSBuildThisFileDirectory)brotlidec.dll">
-			<Visible>false</Visible>
-			<Link>brotlidec.dll</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
-		<None Include="$(MSBuildThisFileDirectory)bz2.dll">
-			<Visible>false</Visible>
-			<Link>bz2.dll</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
-		<None Include="$(MSBuildThisFileDirectory)freetype.dll">
-			<Visible>false</Visible>
-			<Link>freetype.dll</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
 	</ItemGroup>
 </Project>
+
