@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>TesseractWrapper86</id>
-		<version>1.0.0</version>
-		<title>Tesseract Wrapper (x86)</title>
+		<version>1.2</version>
+		<title>Tesseract Wrapper (x64)</title>
 		<authors>Daniel Brauner</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<license type="expression">Apache-2.0</license>
 		<projectUrl>https://github.com/LeFrosch/Tesseract-Wrapper</projectUrl>
 		<description>A very simple and lightweight wrapper for the Tesseract c++ library.</description>
-		<releaseNotes>Initial release.</releaseNotes>
+		<releaseNotes>[ADD] Input validation</releaseNotes>
 		<copyright>Daniel Brauner</copyright>
 		<tags>C# Tesseract</tags>
 

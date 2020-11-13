@@ -11,6 +11,8 @@ namespace TesseractWrapper
 	public ref class ImageReader : IDisposable
 	{
 	private:
+		int width;
+		int height;
 		tesseract::TessBaseAPI* api;
 
 	public:
